@@ -11365,6 +11365,5 @@ OrionLib:Init()
 OrionLib:MakeNotification({
     Name = "Yonkai Hub",
     Content = "https://discord.gg/HDwjCmxVqH",
-    Image = "",
     Time = 5
 })
