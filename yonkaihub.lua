@@ -65,7 +65,6 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shl
 
 local Window = Fluent:CreateWindow({
     Title = " Yonkai Hub | Blox Fruits",
-    SubTitle = "Version 2",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -73,16 +72,16 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
+    Main = Window:AddTab({ Title = "Main",}),
+    Setting = Window:AddTab({ Title = "Setting",}),
+    Stats = Window:AddTab({ Title = "Stats",}),
+    Player = Window:AddTab({ Title = "Player",}),
+    Teleport = Window:AddTab({ Title = "Teleport",}),
+    Fruit = Window:AddTab({ Title = "Fruit", }),
+    Raid = Window:AddTab({ Title = "Raid",}),
+    Race = Window:AddTab({ Title = "Race V4",}),
+    Shop = Window:AddTab({ Title = "Shop",}),
+	Misc = Window:AddTab({ Title = "Misc",}),
 }
 local Options = Fluent.Options
 do
@@ -131,7 +130,6 @@ OldNamecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
 			StarterGui:SetCore("SendNotification", {
 				Title = "Yonkai Hub",
 				Text = "The script has successfully intercepted an attempted kick.",
-				Icon = "",
 				Duration = 2,
 			})
 		end
@@ -146,7 +144,6 @@ if getgenv().ED_AntiKick.SendNotifications then
 	StarterGui:SetCore("SendNotification", {
 		Title = "Yonkai Hub",
 		Text = "Anti-Kick script loaded!",
-		Icon = "",
 		Duration = 3,
 	})
 end
