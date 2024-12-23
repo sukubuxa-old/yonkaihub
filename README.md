@@ -11363,8 +11363,8 @@ end)
 OrionLib:Init()
 
 OrionLib:MakeNotification({
-    Name = "Sla Hub",
-    Content = "Loading Config Complete!!",
-    Image = "rbxassetid://119980140458596",
+    Name = "Yonkai Hub",
+    Content = "https://discord.gg/HDwjCmxVqH",
+    Image = "",
     Time = 5
 })
