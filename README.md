@@ -73,16 +73,16 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://88147973848189" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "rbxassetid://88147973848189" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "rbxassetid://88147973848189" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "rbxassetid://88147973848189" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://88147973848189" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "rbxassetid://88147973848189" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "rbxassetid://88147973848189" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "rbxassetid://88147973848189" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "rbxassetid://88147973848189" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "rbxassetid://88147973848189" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Setting = Window:AddTab({ Title = "Setting", Icon = "" }),
+    Stats = Window:AddTab({ Title = "Stats", Icon = "" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "" }),
+    Fruit = Window:AddTab({ Title = "Fruit", Icon = "" }),
+    Raid = Window:AddTab({ Title = "Raid", Icon = "" }),
+    Race = Window:AddTab({ Title = "Race V4", Icon = "" }),
+    Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
+	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
 }
 local Options = Fluent.Options
 do
@@ -90,7 +90,7 @@ OrionLib:MakeNotification(
         {
             Name = "Notification",
             Content = "Please Wait For Loading Code",
-            Image = "rbxassetid://88147973848189",
+            Image = "",
             Time = 7
         }
     )
@@ -131,7 +131,7 @@ OldNamecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
 			StarterGui:SetCore("SendNotification", {
 				Title = "Yonkai Hub",
 				Text = "The script has successfully intercepted an attempted kick.",
-				Icon = "rbxassetid://88147973848189",
+				Icon = "",
 				Duration = 2,
 			})
 		end
@@ -146,7 +146,7 @@ if getgenv().ED_AntiKick.SendNotifications then
 	StarterGui:SetCore("SendNotification", {
 		Title = "Yonkai Hub",
 		Text = "Anti-Kick script loaded!",
-		Icon = "rbxassetid://88147973848189",
+		Icon = "",
 		Duration = 3,
 	})
 end
@@ -7519,7 +7519,7 @@ OrionLib:MakeNotification(
     {
         Name = "Notification",
         Content = "Done Loading Code You Can Use Script Now",
-        Image = "rbxassetid://88147973848189",
+        Image = "",
         Time = 5
     }
 )
